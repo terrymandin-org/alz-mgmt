@@ -21,4 +21,8 @@ module "enterprise-scale" {
     azurerm.connectivity = azurerm.connectivity
     azurerm.management   = azurerm.management
   }
+
+  subscription_id_overrides = {
+    corp = [ var.subscription_id_corp_landing_zone ]
+  }
 }

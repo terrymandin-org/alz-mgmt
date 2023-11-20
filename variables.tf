@@ -29,3 +29,8 @@ variable "root_name" {
   type        = string
   default     = "Enterprise-Scale"
 }
+
+variable "subscription_id_corp_landing_zone" {
+  description = "The identifier of the Corporate Landing Zone Subscription. (e.g '00000000-0000-0000-0000-000000000000')|5|azure_subscription_id"
+  type        = string
+}
